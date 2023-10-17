@@ -1,0 +1,15 @@
+---
+title: "Pune Leaflet"
+author: "Shirley Asangi"
+date: "16/10/2023"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(dplyr) # Load the dplyr package
+leaflet() %>%
+  setView(lng = 18.5204, lat = 73.8567, zoom = 13) %>%
+  addTiles() %>%
+  addMarkers(lng = 18.5204, lat = 73.8567, popup = "Hello, this is Pune")
+```
